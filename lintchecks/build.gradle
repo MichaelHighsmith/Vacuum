@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    def lint_version = '30.3.0'
+    compileOnly "com.android.tools.lint:lint-api:$lint_version"
+}
+
+jar {
+    manifest {
+        attributes('Lint-Registry-v2': 'com.accenture.michaelhighsmith.lintchecks.LintRegistry')
+    }
+}
