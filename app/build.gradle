@@ -34,7 +34,7 @@ android {
 
 dependencies {
 
-    lintPublish project(':lintchecks')
+    //lintPublish project(':lintchecks')
     lintChecks project(':lintchecks')
 
     implementation 'androidx.core:core-ktx:1.7.0'

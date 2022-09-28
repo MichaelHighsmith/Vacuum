@@ -16,3 +16,4 @@ rootProject.name = "Vacuum"
 include ':app'
 include ':checks'
 include ':lintchecks'
+include ':lintlibrary'
